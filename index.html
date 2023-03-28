@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seleccion Pokemon</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <p>Selecciona 3 pokemones y haz click en el boton iniciar para dar comienzo a la batalla pokemon</p>
+        <div class="contenedorTipos">
+            <p>Pokemones tipo fuego</p>
+            <div class="pokemones">
+                <div class="pokemon" id="Charizard">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill invisible" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                    </svg>
+                    <img src="006.png" alt="Charizard">
+                    <p>Charizard</p>
+                    <div class="info">
+                        <span class="badge bg-danger">HP 900</span>
+                        <span class="badge bg-danger">skill Lanzallamas</span>
+                        <span class="badge bg-danger">damage 105</span>
+                    </div>
+                    <button onclick="checkEvent(event)" type="button" class="btn btn-danger">Elegir a Charizar</button>
+                </div>
+                <div class="pokemon" id="Rapidash">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill invisible" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                      </svg>
+                    <img src="078.png" alt="Rapidash">
+                    <p>Rapidash</p>
+                    <div class="info">
+                        <span class="badge bg-danger">HP 900</span>
+                        <span class="badge bg-danger">skill Lanzallamas</span>
+                        <span class="badge bg-danger">damage 105</span>
+                    </div>
+                    <button onclick="checkEvent(event)" type="button" class="btn btn-danger">Elegir a Rapidash</button>
+                </div>
+                <div class="pokemon" id="Arcanine">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill invisible" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                      </svg>
+                    <img src="059.png" alt="Arcanine">
+                    <p>Arcanine</p>
+                    <div class="info">
+                        <span class="badge bg-danger">HP 900</span>
+                        <span class="badge bg-danger">skill Lanzallamas</span>
+                        <span class="badge bg-danger">damage 105</span>
+                    </div>
+                    <button onclick="checkEvent(event)" type="button" class="btn btn-danger">Elegir a Arcaine</button>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorTipos">
+            <p>Pokemones tipo agua</p>
+            <div class="pokemones">
+                <div class="pokemon" id="Blastoise">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill invisible" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                      </svg>
+                    <img src="009.png" alt="Blastoise">
+                    <p>Blastoise</p>
+                    <div class="info">
+                        <span class="badge bg-primary">HP 900</span>
+                        <span class="badge bg-primary">skill Lanzallamas</span>
+                        <span class="badge bg-primary">damage 105</span>
+                    </div>
+                    <button onclick="checkEvent(event)" type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div class="pokemon" id="Golduck">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill invisible" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                      </svg>
+                    <img src="055.png" alt="Golduck">
+                    <p>Golduck</p>
+                    <div class="info">
+                        <span class="badge bg-primary">HP 900</span>
+                        <span class="badge bg-primary">skill Lanzallamas</span>
+                        <span class="badge bg-primary">damage 105</span>
+                    </div>
+                    <button onclick="checkEvent(event)" type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div class="pokemon" id="Poliwrath">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill invisible" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                      </svg>
+                    <img src="062.png" alt="Poliwrath">
+                    <p>Poliwrath</p>
+                    <div class="info">
+                        <span class="badge bg-primary">HP 900</span>
+                        <span class="badge bg-primary">skill Lanzallamas</span>
+                        <span class="badge bg-primary">damage 105</span>
+                    </div>
+                    <button onclick="checkEvent(event)" type="button" class="btn btn-primary">Primary</button>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorTipos">
+            <p>Pokemones tipo planta</p>
+            <div class="pokemones">
+                <div class="pokemon" id="Venasaur">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill invisible" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                      </svg>
+                    <img src="003.png" alt="Venasaur">
+                    <p>Venasaur</p>
+                    <div class="info">
+                        <span class="badge bg-success">HP 900</span>
+                        <span class="badge bg-success">skill Lanzallamas</span>
+                        <span class="badge bg-success">damage 105</span>
+                    </div>
+                    <button onclick="checkEvent(event)" type="button" class="btn btn-success">Success</button>
+                </div>
+                <div class="pokemon " id="Roselia">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill invisible" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                      </svg>
+                    <img src="315.png" alt="Roselia">
+                    <p>Roselia</p>
+                    <div class="info">
+                        <span class="badge bg-success">HP 900</span>
+                        <span class="badge bg-success">skill Lanzallamas</span>
+                        <span class="badge bg-success">damage 105</span>
+                    </div>
+                    <button onclick="checkEvent(event)" type="button" class="btn btn-success">Success</button>
+                </div>
+                <div class="pokemon" id="Meganium">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill invisible" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                      </svg>
+                    <img src="154.png" alt="Meganium">
+                    <p>Meganium</p>
+                    <div class="info">
+                        <span class="badge bg-success">HP 900</span>
+                        <span class="badge bg-success">skill Lanzallamas</span>
+                        <span class="badge bg-success">damage 105</span>
+                    </div>
+                    <button onclick="checkEvent(event)"  type="button"  class="btn btn-success">Success</button>
+                </div>
+            </div>
+        </div>
+        <button onclick="location.href='javascript:prepararBatalla()'" type="button" class="btn btn-info">INICIAR BATALLA</button>
+        <div class="batalla pokemones" id="Batalla">
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

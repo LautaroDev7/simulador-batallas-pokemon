@@ -1,0 +1,57 @@
+body  {
+    font-size: 2rem ;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.952);
+}
+
+.pokemones{
+    display: flex;
+}
+
+.pokemon{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: solid rgba(27, 25, 25, 0.877);
+    border-radius: 5%;
+    padding: 10px;
+    background-color: rgba(197, 186, 186, 0.596);
+    text-align: center;
+}
+.pokemon:hover{
+    background-color: white;
+}
+.fondo{
+    background-color: rgba(139, 192, 132, 0.815);
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.badge{
+    margin: 5px;
+}
+img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+/*-------------------------------------------------------------------batalla----------------------------------*/
+.textoBatalla{
+    max-height: 440px;
+    width: 400px;
+    background-color:white;
+}
+
+.inside{
+    display: inline-block;;
+}
